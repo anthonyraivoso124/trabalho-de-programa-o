@@ -16,18 +16,20 @@ body {
 
 /* Estilo para as imagens */
 img {
-    max-width: Defina um tamanho; /* A imagem nunca ultrapassará a largura da tela */
-    height: auto; /* Mantém a proporção da imagem */
-}
+    max-width: 20% ; /* A imagem nunca ultrapassará a largura da tela */
 
 /* Estilo para o título h1 */
 h1 {
     color:Escolha uma cor;
-    margin-top: Defina o tamanho da fonte; /* Espaço superior */
+    margin-top: 20cap/* Espaço superior */
 }
 
 /* Estilo para o subtítulo h2 */
 h2 {
     color:Escolha uma cor;
-    margin-top: Defina um tamnho; /* Espaço superior */
+    margin-top: 20cap ; /* Espaço superior */
+}}
+h3 {
+    color:Escolha uma cor;
+    margin-top: 20cap ; /* Espaço superior */
 }}
