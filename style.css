@@ -1,35 +1,237 @@
-/* Estilo para o body */
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-image: url('https://blog.climatefieldview.com.br/hubfs/Imported_Blog_Media/agricultura-digital-1024x683.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+  }
+  
+  /* Estilo para títulos */
+  h1 {
+    color: rgb(186, 253, 255);
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  h2 {
+    color: rgba(20, 2, 122, 0.664);
+    margin-top: 15px;
+    text-align: left;
+  }
+  
+  h3 {
+    color: white;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  h4,
+  h5 {
+    color: black;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background: #222;
+    color: #fff;
+    padding: 1rem 2rem;
     display: flex;
-    flex-direction: column; /* Organiza os elementos verticalmente */
-    justify-content: center; /* Centraliza no eixo vertical */
-    align-items: center; /* Centraliza no eixo horizontal */
-    height: 100vh; /* Faz o body ocupar 100% da altura da tela */
-    margin: 0; /* Remove a margem padrão */
-    text-align: center; /* Centraliza os textos */
-
-
-/* Estilo para a div que contém a imagem */
-.imagem-container {
-    text-align: center; /* Garante que a imagem fique centralizada */
-}
-
-/* Estilo para as imagens */
-img {
-    max-width: 20% ; /* A imagem nunca ultrapassará a largura da tela */
-
-/* Estilo para o título h1 */
-h1 {
-    color:Escolha uma cor;
-    margin-top: 20cap/* Espaço superior */
-}
-
-/* Estilo para o subtítulo h2 */
-h2 {
-    color:Escolha uma cor;
-    margin-top: 20cap ; /* Espaço superior */
-}}
-h3 {
-    color:Escolha uma cor;
-    margin-top: 20cap ; /* Espaço superior */
-}}
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  /* Seções */
+  section {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.863);
+    margin: 1rem;
+    border-radius: 8px;
+  }
+  
+  /* Sobre */
+  .sobre-conteudo {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .sobre-conteudo img {
+    width: 200px;
+    border-radius: 8px;
+  }
+  
+  /* Vídeo */
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  /* Galeria */
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .galeria img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Formulário */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+    align-self: flex-start;
+  }
+  
+  input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #004999;
+  }
+  
+  /* Rodapé */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background: #333;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  
+    nav ul.active {
+      display: flex;
+    }
+  
+    #menu-toggle {
+      display: block;
+    }
+  
+    .sobre-conteudo {
+      flex-direction: column;
+    }
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-image: url('camp.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+  }
+  .texto-conexao {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    text-align: justify;
+  }
+  
+  .texto-conexao h2 {
+    text-align: center;
+    color: #004999;
+    margin-bottom: 1rem;
+  }
+  
+  .texto-conexao p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  
